@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #222;
+}
+
+.encabezado {
+  padding: 24px;
+  text-align: center;
+  background: #ffffff;
+  border-bottom: 1px solid #dddddd;
+}
+
+.encabezado h1 {
+  margin: 0 0 8px;
+}
+
+.encabezado p {
+  margin: 0;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.panel-formulario,
+.vista-cv {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbbbbb;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.cv {
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 24px;
+  min-height: 720px;
+}
+
+.cv-encabezado {
+  border-bottom: 2px solid #222222;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+}
+
+.cv h2,
+.cv h3,
+.cv p {
+  margin-top: 0;
+}
+
+.cv section {
+  margin-bottom: 18px;
+}
+
+@media (max-width: 800px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+  }
+}
