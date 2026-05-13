@@ -3,82 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Creador de CV - Etapa 1</title>
+  <title>Creador de CV - Etapa 2</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="encabezado">
-    <h1>Creador de CV</h1>
-    <p>Primera base de la pagina para completar y visualizar un curriculum.</p>
+  <header class="barra-superior">
+    <div>
+      <h1>Creador de CV</h1>
+      <p>Completa tus datos y mira el resultado en tiempo real.</p>
+    </div>
   </header>
 
   <main class="contenedor">
-    <section class="panel-formulario">
-      <h2>Datos personales</h2>
+    <section class="panel formulario">
+      <h2>Informacion del CV</h2>
 
-      <form>
-        <label for="nombre">Nombre y apellido</label>
-        <input type="text" id="nombre" placeholder="Ej: Sofia Martinez">
+      <form id="cvForm">
+        <div class="grupo">
+          <label for="nombre">Nombre y apellido</label>
+          <input type="text" id="nombre" placeholder="Sofia Martinez">
+        </div>
 
-        <label for="profesion">Profesion u ocupacion</label>
-        <input type="text" id="profesion" placeholder="Ej: Desarrolladora web">
+        <div class="grupo">
+          <label for="profesion">Profesion u ocupacion</label>
+          <input type="text" id="profesion" placeholder="Desarrolladora web junior">
+        </div>
 
-        <label for="email">Correo electronico</label>
-        <input type="email" id="email" placeholder="Ej: sofia@email.com">
+        <div class="fila">
+          <div class="grupo">
+            <label for="email">Correo electronico</label>
+            <input type="email" id="email" placeholder="sofia@email.com">
+          </div>
 
-        <label for="telefono">Telefono</label>
-        <input type="tel" id="telefono" placeholder="Ej: +54 11 1234 5678">
+          <div class="grupo">
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" placeholder="+54 11 1234 5678">
+          </div>
+        </div>
 
-        <label for="ubicacion">Ubicacion</label>
-        <input type="text" id="ubicacion" placeholder="Ej: Buenos Aires, Argentina">
+        <div class="grupo">
+          <label for="ubicacion">Ubicacion</label>
+          <input type="text" id="ubicacion" placeholder="Buenos Aires, Argentina">
+        </div>
 
-        <label for="perfil">Descripcion personal</label>
-        <textarea id="perfil" rows="5" placeholder="Escribe una breve descripcion profesional."></textarea>
+        <div class="grupo">
+          <label for="perfil">Descripcion personal</label>
+          <textarea id="perfil" rows="5" placeholder="Presentacion breve sobre tu perfil profesional."></textarea>
+        </div>
 
-        <h2>Experiencia laboral</h2>
-        <label for="experiencia">Experiencia</label>
-        <textarea id="experiencia" rows="6" placeholder="Ej: Puesto, empresa, fechas y tareas principales."></textarea>
+        <div class="grupo">
+          <label for="experiencia">Experiencia laboral</label>
+          <textarea id="experiencia" rows="6" placeholder="Puesto, empresa, fechas y tareas principales."></textarea>
+        </div>
 
-        <h2>Estudios</h2>
-        <label for="estudios">Formacion academica</label>
-        <textarea id="estudios" rows="5" placeholder="Ej: Carrera, institucion y periodo."></textarea>
+        <div class="grupo">
+          <label for="estudios">Estudios</label>
+          <textarea id="estudios" rows="5" placeholder="Titulo, institucion y periodo de estudio."></textarea>
+        </div>
 
-        <h2>Habilidades</h2>
-        <label for="habilidades">Habilidades principales</label>
-        <textarea id="habilidades" rows="4" placeholder="Ej: HTML, CSS, JavaScript, trabajo en equipo."></textarea>
+        <div class="grupo">
+          <label for="habilidades">Habilidades</label>
+          <textarea id="habilidades" rows="4" placeholder="HTML, CSS, JavaScript, comunicacion, organizacion."></textarea>
+        </div>
       </form>
     </section>
 
-    <section class="vista-cv">
+    <section class="panel vista-previa">
+      <div class="titulo-previa">
+        <h2>Vista previa</h2>
+        <span>CV</span>
+      </div>
+
       <article class="cv">
-        <header class="cv-encabezado">
-          <h2>Nombre y apellido</h2>
-          <p>Profesion u ocupacion</p>
+        <header class="cv-header">
+          <div>
+            <h2 id="previewNombre">Tu nombre</h2>
+            <p id="previewProfesion">Tu profesion</p>
+          </div>
         </header>
 
-        <section>
+        <section class="cv-seccion">
           <h3>Contacto</h3>
-          <p>correo@email.com | Telefono | Ubicacion</p>
+          <p id="previewContacto">correo@email.com | telefono | ubicacion</p>
         </section>
 
-        <section>
+        <section class="cv-seccion">
           <h3>Perfil</h3>
-          <p>Descripcion personal de la persona.</p>
+          <p id="previewPerfil">Aca va tu descripcion personal.</p>
         </section>
 
-        <section>
+        <section class="cv-seccion">
           <h3>Experiencia laboral</h3>
-          <p>Informacion sobre puestos, empresas y tareas realizadas.</p>
+          <p id="previewExperiencia">Aca se muestra tu experiencia laboral.</p>
         </section>
 
-        <section>
+        <section class="cv-seccion">
           <h3>Estudios</h3>
-          <p>Informacion sobre estudios, cursos o certificaciones.</p>
+          <p id="previewEstudios">Aca se muestran tus estudios.</p>
         </section>
 
-        <section>
+        <section class="cv-seccion">
           <h3>Habilidades</h3>
-          <p>Lista de habilidades principales.</p>
+          <p id="previewHabilidades">Aca se muestran tus habilidades.</p>
         </section>
       </article>
     </section>
