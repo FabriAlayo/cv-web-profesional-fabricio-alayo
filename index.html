@@ -8,48 +8,48 @@
 </head>
 <body>
   <header class="app-header">
-    <div class="header-contenido">
+    <div class="header-content">
       <div>
         <h1>Curriculum Vitae</h1>
         <p>Fabricio Alayo - Desarrollador Web</p>
       </div>
 
-      <div class="acciones-header">
-        <button type="button" id="themeBtn" class="btn icono" aria-label="Activar modo oscuro" title="Cambiar tema">
+      <div class="header-actions">
+        <button type="button" id="themeBtn" class="btn icon" aria-label="Activar modo isDark" title="Cambiar tema">
           <svg id="moonIcon" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M21 14.7A8.5 8.5 0 0 1 9.3 3a7 7 0 1 0 11.7 11.7Z"></path>
           </svg>
-          <svg id="sunIcon" class="oculto" viewBox="0 0 24 24" aria-hidden="true">
+          <svg id="sunIcon" class="hidden" viewBox="0 0 24 24" aria-hidden="true">
             <circle cx="12" cy="12" r="4"></circle>
             <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
           </svg>
         </button>
-        <button type="button" id="openCvBtn" class="btn primario">Ver CV completo</button>
+        <button type="button" id="openCvBtn" class="btn primary">Ver CV completo</button>
       </div>
     </div>
   </header>
 
   <main class="app-layout">
     <section class="panel preview-panel">
-      <div class="panel-titulo">
+      <div class="panel-title">
         <h2>CV profesional</h2>
       </div>
 
       <article class="cv" id="cvPreview">
-        <aside class="cv-lateral">
-          <div class="foto-preview" id="fotoPreview">
-            <img id="previewFoto" alt="Foto del CV">
-            <span id="previewIniciales">CV</span>
+        <aside class="cv-sidebar">
+          <div class="photo-preview" id="fotoPreview">
+            <img id="previewPhoto" alt="Foto del CV">
+            <span id="previewInitials">CV</span>
           </div>
 
-          <section class="cv-bloque lateral">
+          <section class="cv-section sidebar">
             <h3>Contacto</h3>
             <p>fabrialayo36@gmail.com</p>
             <p>22143434343</p>
             <p>La Plata, Buenos Aires</p>
           </section>
 
-          <section class="cv-bloque lateral">
+          <section class="cv-section sidebar">
             <h3>Habilidades</h3>
             <ul>
               <li>HTML</li>
@@ -60,7 +60,7 @@
             </ul>
           </section>
 
-          <section class="cv-bloque lateral">
+          <section class="cv-section sidebar">
             <h3>Idiomas</h3>
             <ul>
               <li>Español (Nativo)</li>
@@ -69,19 +69,19 @@
           </section>
         </aside>
 
-        <div class="cv-principal">
-          <header class="cv-portada">
+        <div class="cv-main">
+          <header class="cv-heading">
             <p class="eyebrow">Curriculum vitae</p>
             <h2>Fabricio Alayo</h2>
             <p>Desarrollador Web</p>
           </header>
 
-          <section class="cv-bloque">
+          <section class="cv-section">
             <h3>Perfil profesional</h3>
             <p>Estudiante avanzado de programación con experiencia laboral activa en roles que exigen alta responsabilidad, puntualidad y trabajo en equipo. Esta combinación me dio una fuerte capacidad de organización y resolución de problemas bajo presión. Busco mi primera oportunidad laboral en el sector IT para aplicar mis conocimientos en desarrollo de software y seguir creciendo profesionalmente.</p>
           </section>
 
-          <section class="cv-bloque">
+          <section class="cv-section">
             <h3>Experiencia laboral</h3>
             <ul>
               <li><strong>Ayudante de electricista:</strong> asistencia en instalaciones, mantenimiento eléctrico, organización de materiales, logística de trabajo y resolución de problemas en obra.</li>
@@ -89,7 +89,7 @@
             </ul>
           </section>
 
-          <section class="cv-bloque">
+          <section class="cv-section">
             <h3>Estudios</h3>
             <ul>
               <li>Tecnicatura Universitaria en Programación | Universidad Tecnológica Nacional (UTN) - Facultad Regional La Plata | 2025 | En curso (Segundo año)</li>
@@ -98,8 +98,8 @@
         </div>
       </article>
 
-      <div class="acciones-cv">
-        <button type="button" id="printBtn" class="btn imprimir">
+      <div class="cv-actions">
+        <button type="button" id="printBtn" class="btn print">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M6 9V3h12v6"></path>
             <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
