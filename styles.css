@@ -1,27 +1,27 @@
 :root {
-  --fondo: #eef2f6;
-  --panel: #ffffff;
-  --texto: #1f2937;
-  --texto-suave: #667085;
-  --borde: #d8dee8;
-  --principal: #1d4ed8;
-  --principal-suave: #dbeafe;
-  --lateral: #172033;
-  --lateral-texto: #f8fafc;
-  --sombra: 0 18px 44px rgba(31, 41, 55, 0.12);
+  --color-fondo: #eef2f6;
+  --color-panel: #ffffff;
+  --color-texto: #1f2937;
+  --color-texto-suave: #667085;
+  --color-borde: #d8dee8;
+  --color-principal: #1d4ed8;
+  --color-principal-suave: #dbeafe;
+  --color-lateral: #172033;
+  --color-lateral-texto: #f8fafc;
+  --sombra-panel: 0 18px 44px rgba(31, 41, 55, 0.12);
 }
 
 body.dark {
-  --fondo: #111827;
-  --panel: #1f2937;
-  --texto: #f9fafb;
-  --texto-suave: #cbd5e1;
-  --borde: #374151;
-  --principal: #60a5fa;
-  --principal-suave: #1e3a8a;
-  --lateral: #0f172a;
-  --lateral-texto: #f8fafc;
-  --sombra: 0 18px 44px rgba(0, 0, 0, 0.25);
+  --color-fondo: #111827;
+  --color-panel: #1f2937;
+  --color-texto: #f9fafb;
+  --color-texto-suave: #cbd5e1;
+  --color-borde: #374151;
+  --color-principal: #60a5fa;
+  --color-principal-suave: #1e3a8a;
+  --color-lateral: #0f172a;
+  --color-lateral-texto: #f8fafc;
+  --sombra-panel: 0 18px 44px rgba(0, 0, 0, 0.25);
 }
 
 * {
@@ -31,13 +31,13 @@ body.dark {
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: var(--fondo);
-  color: var(--texto);
+  background: var(--color-fondo);
+  color: var(--color-texto);
 }
 
 .app-header {
-  background: var(--panel);
-  border-bottom: 1px solid var(--borde);
+  background: var(--color-panel);
+  border-bottom: 1px solid var(--color-borde);
 }
 
 .header-contenido {
@@ -61,7 +61,7 @@ body {
 
 .app-header p {
   margin-top: 6px;
-  color: var(--texto-suave);
+  color: var(--color-texto-suave);
 }
 
 .acciones-header,
@@ -96,18 +96,18 @@ body {
 }
 
 .btn.primario {
-  background: var(--principal);
+  background: var(--color-principal);
   color: #ffffff;
 }
 
 .btn.secundario {
-  background: var(--principal-suave);
-  color: var(--principal);
+  background: var(--color-principal-suave);
+  color: var(--color-principal);
 }
 
 .btn.texto {
   background: transparent;
-  color: var(--principal);
+  color: var(--color-principal);
   padding: 8px;
 }
 
@@ -117,8 +117,8 @@ body {
   padding: 0;
   display: grid;
   place-items: center;
-  background: var(--principal-suave);
-  color: var(--principal);
+  background: var(--color-principal-suave);
+  color: var(--color-principal);
 }
 
 .btn.icono svg,
@@ -162,10 +162,10 @@ body {
 }
 
 .panel {
-  background: var(--panel);
-  border: 1px solid var(--borde);
+  background: var(--color-panel);
+  border: 1px solid var(--color-borde);
   border-radius: 8px;
-  box-shadow: var(--sombra);
+  box-shadow: var(--sombra-panel);
   padding: 22px;
 }
 
@@ -187,18 +187,18 @@ label {
 input,
 textarea {
   width: 100%;
-  border: 1px solid var(--borde);
+  border: 1px solid var(--color-borde);
   border-radius: 6px;
   padding: 11px 12px;
   font: inherit;
-  color: var(--texto);
-  background: var(--panel);
+  color: var(--color-texto);
+  background: var(--color-panel);
 }
 
 input:focus,
 textarea:focus {
   outline: 2px solid rgba(96, 165, 250, 0.25);
-  border-color: var(--principal);
+  border-color: var(--color-principal);
 }
 
 textarea {
@@ -206,8 +206,8 @@ textarea {
 }
 
 .estado {
-  background: var(--principal-suave);
-  color: var(--principal);
+  background: var(--color-principal-suave);
+  color: var(--color-principal);
   border-radius: 999px;
   padding: 6px 11px;
   font-size: 13px;
@@ -226,8 +226,8 @@ textarea {
 }
 
 .cv-lateral {
-  background: var(--lateral);
-  color: var(--lateral-texto);
+  background: var(--color-lateral);
+  color: var(--color-lateral-texto);
   padding: 28px 22px;
 }
 
