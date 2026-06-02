@@ -10,8 +10,8 @@
   <header class="app-header">
     <div class="header-contenido">
       <div>
-        <h1>Creador de CV</h1>
-        <p>Completa tus datos, agrega tu foto y prepara tu curriculum.</p>
+        <h1>Curriculum Vitae</h1>
+        <p>Fabricio Alayo - Desarrollador Web</p>
       </div>
 
       <div class="acciones-header">
@@ -30,78 +30,9 @@
   </header>
 
   <main class="app-layout">
-    <section class="panel editor">
-      <div class="panel-titulo">
-        <h2>Datos del curriculum</h2>
-        <button type="button" id="clearBtn" class="btn texto">Limpiar</button>
-      </div>
-
-      <form id="cvForm">
-        <div class="foto-control">
-          <label for="foto">Foto del perfil</label>
-          <input type="file" id="foto" accept="image/*">
-        </div>
-
-        <div class="grid-doble">
-          <div class="grupo">
-            <label for="nombre">Nombre y apellido</label>
-            <input type="text" id="nombre" placeholder="Sofia Martinez">
-          </div>
-
-          <div class="grupo">
-            <label for="profesion">Profesion u ocupacion</label>
-            <input type="text" id="profesion" placeholder="Desarrolladora web junior">
-          </div>
-        </div>
-
-        <div class="grid-triple">
-          <div class="grupo">
-            <label for="email">Correo electronico</label>
-            <input type="email" id="email" placeholder="sofia@email.com">
-          </div>
-
-          <div class="grupo">
-            <label for="telefono">Telefono</label>
-            <input type="tel" id="telefono" placeholder="+54 11 1234 5678">
-          </div>
-
-          <div class="grupo">
-            <label for="ubicacion">Ubicacion</label>
-            <input type="text" id="ubicacion" placeholder="Buenos Aires, Argentina">
-          </div>
-        </div>
-
-        <div class="grupo">
-          <label for="perfil">Descripcion personal</label>
-          <textarea id="perfil" rows="4" placeholder="Presentacion breve sobre tu perfil profesional."></textarea>
-        </div>
-
-        <div class="grupo">
-          <label for="experiencia">Experiencia laboral</label>
-          <textarea id="experiencia" rows="6" placeholder="Puesto, empresa, periodo y tareas principales. Usa una linea por experiencia."></textarea>
-        </div>
-
-        <div class="grupo">
-          <label for="estudios">Estudios</label>
-          <textarea id="estudios" rows="5" placeholder="Titulo, institucion y periodo. Usa una linea por estudio."></textarea>
-        </div>
-
-        <div class="grupo">
-          <label for="habilidades">Habilidades</label>
-          <textarea id="habilidades" rows="4" placeholder="HTML, CSS, JavaScript, trabajo en equipo, organizacion."></textarea>
-        </div>
-
-        <div class="grupo">
-          <label for="idiomas">Idiomas</label>
-          <textarea id="idiomas" rows="3" placeholder="Espanol nativo, Ingles intermedio."></textarea>
-        </div>
-      </form>
-    </section>
-
     <section class="panel preview-panel">
       <div class="panel-titulo">
-        <h2>Vista previa</h2>
-        <span class="estado">En vivo</span>
+        <h2>CV profesional</h2>
       </div>
 
       <article class="cv" id="cvPreview">
@@ -113,22 +44,27 @@
 
           <section class="cv-bloque lateral">
             <h3>Contacto</h3>
-            <p id="previewEmail">correo@email.com</p>
-            <p id="previewTelefono">telefono</p>
-            <p id="previewUbicacion">ubicacion</p>
+            <p>fabrialayo36@gmail.com</p>
+            <p>22143434343</p>
+            <p>La Plata, Buenos Aires</p>
           </section>
 
           <section class="cv-bloque lateral">
             <h3>Habilidades</h3>
-            <ul id="previewHabilidades">
-              <li>Tus habilidades principales</li>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JAVA</li>
+              <li>Javascript</li>
+              <li>C</li>
             </ul>
           </section>
 
           <section class="cv-bloque lateral">
             <h3>Idiomas</h3>
-            <ul id="previewIdiomas">
-              <li>Tus idiomas</li>
+            <ul>
+              <li>Español (Nativo)</li>
+              <li>Ingles (Basico)</li>
             </ul>
           </section>
         </aside>
@@ -136,26 +72,27 @@
         <div class="cv-principal">
           <header class="cv-portada">
             <p class="eyebrow">Curriculum vitae</p>
-            <h2 id="previewNombre">Tu nombre</h2>
-            <p id="previewProfesion">Tu profesion</p>
+            <h2>Fabricio Alayo</h2>
+            <p>Desarrollador Web</p>
           </header>
 
           <section class="cv-bloque">
             <h3>Perfil profesional</h3>
-            <p id="previewPerfil">Aca va tu descripcion personal.</p>
+            <p>Estudiante avanzado de programación con experiencia laboral activa en roles que exigen alta responsabilidad, puntualidad y trabajo en equipo. Esta combinación me dio una fuerte capacidad de organización y resolución de problemas bajo presión. Busco mi primera oportunidad laboral en el sector IT para aplicar mis conocimientos en desarrollo de software y seguir creciendo profesionalmente.</p>
           </section>
 
           <section class="cv-bloque">
             <h3>Experiencia laboral</h3>
-            <ul id="previewExperiencia">
-              <li>Aca se muestra tu experiencia laboral.</li>
+            <ul>
+              <li><strong>Ayudante de electricista:</strong> asistencia en instalaciones, mantenimiento eléctrico, organización de materiales, logística de trabajo y resolución de problemas en obra.</li>
+              <li><strong>Programación:</strong> Desarrollo de proyectos académicos aplicando HTML, CSS y JavaScript, con enfoque en diseño web, organización del código y resolución de problemas.</li>
             </ul>
           </section>
 
           <section class="cv-bloque">
             <h3>Estudios</h3>
-            <ul id="previewEstudios">
-              <li>Aca se muestran tus estudios.</li>
+            <ul>
+              <li>Tecnicatura Universitaria en Programación | Universidad Tecnológica Nacional (UTN) - Facultad Regional La Plata | 2025 | En curso (Segundo año)</li>
             </ul>
           </section>
         </div>

@@ -155,7 +155,8 @@ body {
   margin: 0 auto;
   padding: 24px;
   display: grid;
-  grid-template-columns: minmax(340px, 470px) 1fr;
+  grid-template-columns: 1fr;
+  max-width: 960px;
   gap: 24px;
   align-items: start;
 }
@@ -176,26 +177,6 @@ body {
 form {
   display: grid;
   gap: 16px;
-}
-
-.grid-doble,
-.grid-triple {
-  display: grid;
-  gap: 14px;
-}
-
-.grid-doble {
-  grid-template-columns: 1fr 1fr;
-}
-
-.grid-triple {
-  grid-template-columns: 1fr;
-}
-
-.grupo,
-.foto-control {
-  display: grid;
-  gap: 7px;
 }
 
 label {
@@ -423,7 +404,6 @@ textarea {
   }
 
   .app-header,
-  .editor,
   .panel-titulo,
   .acciones-cv,
   .acciones-ventana,
