@@ -4,61 +4,61 @@ const sunIcon = document.getElementById("sunIcon");
 const openCvBtn = document.getElementById("openCvBtn");
 const printBtn = document.getElementById("printBtn");
 
-function alternarTema() {
+function toggleTheme() {
   document.body.classList.toggle("dark");
-  const oscuro = document.body.classList.contains("dark");
-  moonIcon.classList.toggle("oculto", oscuro);
-  sunIcon.classList.toggle("oculto", !oscuro);
-  themeBtn.setAttribute("aria-label", oscuro ? "Activar modo claro" : "Activar modo oscuro");
+  const isDark = document.body.classList.contains("dark");
+  moonIcon.classList.toggle("hidden", isDark);
+  sunIcon.classList.toggle("hidden", !isDark);
+  themeBtn.setAttribute("aria-label", isDark ? "Activar modo claro" : "Activar modo isDark");
 }
 
-function abrirCVCompleto() {
-  const ventana = window.open("", "_blank");
+function openFullCv() {
+  const newWindow = window.open("", "_blank");
 
-  if (!ventana) {
-    mostrarAvisoPopup();
+  if (!newWindow) {
+    showPopupWarning();
     return;
   }
 
-  const rutaBase = window.location.href.substring(0, window.location.href.lastIndexOf("/") + 1);
-  const cvCompleto = document.getElementById("cvPreview").outerHTML;
-  ventana.document.write(`
+  const basePath = window.location.href.substring(0, window.location.href.lastIndexOf("/") + 1);
+  const fullCv = document.getElementById("cvPreview").outerHTML;
+  newWindow.document.write(`
     <!DOCTYPE html>
     <html lang="es">
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>CV completo</title>
-      <base href="${rutaBase}">
+      <base href="${basePath}">
       <link rel="stylesheet" href="styles.css">
     </head>
-    <body class="ventana-cv">
-      ${cvCompleto}
-      <div class="acciones-ventana">
-        <button type="button" class="btn primario" onclick="window.print()">Descargar PDF</button>
+    <body class="cv-window">
+      ${fullCv}
+      <div class="window-actions">
+        <button type="button" class="btn primary" onclick="window.print()">Descargar PDF</button>
       </div>
     </body>
     </html>
   `);
 
-  ventana.document.close();
+  newWindow.document.close();
 }
 
-function mostrarAvisoPopup() {
-  const avisoAnterior = document.querySelector(".mensaje-popup");
+function showPopupWarning() {
+  const previousWarning = document.querySelector(".popup-message");
 
-  if (avisoAnterior) {
-    avisoAnterior.remove();
+  if (previousWarning) {
+    previousWarning.remove();
   }
 
-  const aviso = document.createElement("p");
-  aviso.className = "mensaje-popup";
-  aviso.textContent = "El navegador bloqueo la ventana nueva. Habilita las ventanas emergentes para ver el CV completo.";
-  document.querySelector(".preview-panel").appendChild(aviso);
+  const warning = document.createElement("p");
+  warning.className = "popup-message";
+  warning.textContent = "El navegador bloqueo la newWindow nueva. Habilita las newWindows emergentes para ver el CV completo.";
+  document.querySelector(".preview-panel").appendChild(warning);
 }
 
 
-themeBtn.addEventListener("click", alternarTema);
-openCvBtn.addEventListener("click", abrirCVCompleto);
+themeBtn.addEventListener("click", toggleTheme);
+openCvBtn.addEventListener("click", openFullCv);
 printBtn.addEventListener("click", () => window.print());
 
