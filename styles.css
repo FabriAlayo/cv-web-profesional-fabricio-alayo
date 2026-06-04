@@ -50,17 +50,13 @@ body {
   gap: 18px;
 }
 
-.app-header h1,
-.app-header p {
+.app-header-title {
   margin: 0;
-}
-
-.app-header h1 {
   font-size: 30px;
 }
 
-.app-header p {
-  margin-top: 6px;
+.app-header-subtitle {
+  margin: 6px 0 0;
   color: var(--color-muted-text);
 }
 
@@ -76,7 +72,7 @@ body {
   margin-bottom: 18px;
 }
 
-.panel-title h2 {
+.panel-title-text {
   margin: 0;
   font-size: 20px;
 }
@@ -274,13 +270,13 @@ textarea {
   text-transform: uppercase;
 }
 
-.cv-heading h2 {
+.cv-heading-name {
   margin: 0;
   font-size: 38px;
   line-height: 1.1;
 }
 
-.cv-heading p:last-child {
+.cv-heading-role {
   margin: 10px 0 0;
   color: #475569;
   font-size: 18px;
@@ -290,34 +286,34 @@ textarea {
   margin-bottom: 24px;
 }
 
-.cv-section h3 {
+.cv-section-title {
   margin: 0 0 10px;
   color: #1d4ed8;
   font-size: 16px;
   text-transform: uppercase;
 }
 
-.cv-section p,
-.cv-section li {
+.cv-section-text,
+.cv-section-item {
   line-height: 1.55;
 }
 
-.cv-section p {
+.cv-section-text {
   margin: 0;
   white-space: pre-line;
 }
 
-.cv-section ul {
+.cv-section-list {
   margin: 0;
   padding-left: 20px;
 }
 
-.cv-section.sidebar h3 {
+.cv-section.sidebar .cv-section-title {
   color: #93c5fd;
 }
 
-.cv-section.sidebar p,
-.cv-section.sidebar li {
+.cv-section.sidebar .cv-section-text,
+.cv-section.sidebar .cv-section-item {
   color: #e5e7eb;
   overflow-wrap: anywhere;
 }
